@@ -1,7 +1,6 @@
 class Developer extends Employee {
-    constructor(name) {
+    constructor() {
         super();
-        this.name = name;
         this.nameManager;
     }
 
@@ -9,7 +8,7 @@ class Developer extends Employee {
         this.nameManager = nameManager;
     }
 
-    set() {
+    get() {
         console.log(this.nameManager);
     }
 }

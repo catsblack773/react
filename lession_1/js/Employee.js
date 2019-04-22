@@ -1,13 +1,12 @@
 class Employee extends Human {
-    constructor() {
+    constructor(salary, department) {
         super();
-        this.salary = 12;
-        this.department = 'String';
+        this.salary = salary;
+        this.department = department;
     }
 
     displayInfo() {
         let s = super.displayInfo();
-        return  s + ', salary: ' + this.salary +
-                ', department: ' + this.department;
+        return  `${s}, salary: ${this.salary}, department: ${this.department}`;
     }
 }

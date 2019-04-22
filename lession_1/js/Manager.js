@@ -1,15 +1,14 @@
 class Manager extends Employee {
-    constructor(name) {
+    constructor() {
         super();
-        this.name = name;
         this.dev = [];
     }
 
-    get(nameDev) {
+    set(nameDev) {
         this.dev.push(nameDev);
     }
 
-    set() {
+    get() {
         console.log(this.dev);
     }
 

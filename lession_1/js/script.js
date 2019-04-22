@@ -56,11 +56,11 @@ calculateArea(1, 1);
 console.log('');
 console.log('---Задание 3---');
 console.log('---3.1. human---');
-let human = new Human();
+let human = new Human('Вася', 25, '25.05.2015');
 console.log(human.displayInfo());
 
 console.log('---3.2. employee---');
-let employee = new Employee();
+let employee = new Employee(200, 'department');
 console.log(employee.displayInfo());
 
 console.log('---3.3. Manager and Developer---');
@@ -68,13 +68,13 @@ console.log('---3.3. Manager and Developer---');
 let manager1 = new Manager('Павел');
 let manager2 = new Manager('Семен');
 
-manager1.get('Михаил');
-manager1.set();
+manager1.set('Михаил');
+manager1.get();
 
 let dev = new Developer('Эдуард');
 
-manager2.get('Эдуард');
-manager2.set();
+manager2.set('Эдуард');
+manager2.get();
 
 dev.edit('Семен');
-dev.set();
+dev.get();
