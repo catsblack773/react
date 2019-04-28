@@ -4,7 +4,7 @@
 console.log('---Задание 1---');
 
 function loop(times = 0, callback = null) {
-    if (callback === null)
+    if (typeof callback !== 'function')
         return false;
 
     for(let i = 0; i < times; i++) {
