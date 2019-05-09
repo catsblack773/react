@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class User extends Component {
+class NotFound extends Component {
     render() {
         return (
             <div>
-                
+                <h2>Страница не найдена</h2>
             </div>
         );
     }
 }
 
-export default User;
+export default NotFound;
