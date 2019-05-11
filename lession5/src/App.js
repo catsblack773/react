@@ -7,6 +7,10 @@ import Layout from './app/layouts/Layout';
 import MainPage from './app/pages/Main';
 import Users from './app/pages/Users';
 import User from './app/pages/User';
+import Posts from './app/pages/Posts';
+import Post from './app/pages/Post';
+import Comments from './app/pages/Comments';
+import Comment from './app/pages/Comment';
 import NotFound from './app/pages/NotFound';
 
 ReactDOM.render(<Router history={browserHistory}>
@@ -14,6 +18,12 @@ ReactDOM.render(<Router history={browserHistory}>
     <IndexRoute component={MainPage}/>
     <Route path="users" component={Users}>
       <Route path=":userId" component={User}/>
+    </Route>
+    <Route path="posts" component={Posts}>
+      <Route path=":postId" component={Post}/>
+    </Route>
+    <Route path="comments" component={Comments}>
+      <Route path=":commentId" component={Comment}/>
     </Route>
     <Route path="*" component={NotFound}/>
   </Route>
